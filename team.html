@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Team - LATERAL</title>
+    <meta name="description" content="Meet the diverse, mission-driven team behind LATERAL's work to scale mental health solutions globally.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .team-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: var(--spacing-lg);
+            margin-top: var(--spacing-lg);
+        }
+        .team-member {
+            background: var(--white);
+            border: 1px solid var(--border-gray);
+            border-radius: 8px;
+            padding: var(--spacing-md);
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+        .team-member:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+        }
+        .member-avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--secondary-green) 100%);
+            margin: 0 auto var(--spacing-md);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+            color: var(--primary-blue);
+            font-weight: 600;
+        }
+        .member-name {
+            font-size: 1.25rem;
+            font-weight: 600;
+            color: var(--dark-text);
+            margin-bottom: var(--spacing-xs);
+        }
+        .member-role {
+            color: var(--primary-blue);
+            font-weight: 500;
+            margin-bottom: var(--spacing-sm);
+        }
+        .member-bio {
+            color: var(--light-text);
+            line-height: 1.6;
+        }
+        .team-note {
+            background: var(--secondary-green);
+            padding: var(--spacing-md);
+            border-radius: 8px;
+            text-align: center;
+            margin-top: var(--spacing-lg);
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <a href="index.html">LATERAL</a>
+            </div>
+            <button class="nav-toggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="model.html" class="nav-link">Our Model</a>
+                <a href="research.html" class="nav-link">Research</a>
+                <a href="team.html" class="nav-link active">Team</a>
+                <a href="get-involved.html" class="nav-link">Get Involved</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Our Team</h1>
+            <p class="page-subtitle">Meet the people working to make mental health care accessible worldwide</p>
+        </div>
+    </section>
+
+    <!-- Team Members Section -->
+    <section class="content-section">
+        <div class="container">
+            <h2 class="section-title text-center">Leadership Team</h2>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <div class="member-avatar">JK</div>
+                    <h3 class="member-name">Jeffrey Kursonis</h3>
+                    <p class="member-role">Founder & CEO</p>
+                    <p class="member-bio">Jeffrey brings decades of experience in mental health innovation and social entrepreneurship. He founded LATERAL to create scalable solutions for the global mental health crisis, combining proven approaches with continuous innovation.</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-avatar">SB</div>
+                    <h3 class="member-name">Dr. Scott D. Blain</h3>
+                    <p class="member-role">Researcher</p>
+                    <p class="member-bio">Scott is a computational social neuroscientist focused on understanding social cognition and mental health. He brings expertise in research design, data analysis, and the intersection of technology and psychology.</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-avatar">ML</div>
+                    <h3 class="member-name">Matthew Lee</h3>
+                    <p class="member-role">AI & Strategy</p>
+                    <p class="member-bio">Matthew leads our technology strategy, ensuring that AI and digital tools enhance rather than replace human therapeutic relationships. He focuses on building scalable systems that maintain quality and cultural sensitivity.</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-avatar">GH</div>
+                    <h3 class="member-name">Gina Hafez</h3>
+                    <p class="member-role">Psychology Lead</p>
+                    <p class="member-bio">Gina oversees the clinical and therapeutic aspects of our programs, ensuring evidence-based practices are effectively adapted for diverse cultural contexts while maintaining therapeutic fidelity.</p>
+                </div>
+                
+                <div class="team-member">
+                    <div class="member-avatar">AJ</div>
+                    <h3 class="member-name">Anand Jeevanandham</h3>
+                    <p class="member-role">AI Engineer</p>
+                    <p class="member-bio">Anand develops the technical infrastructure that powers our research platform, creating tools for data collection, analysis, and insights that help improve mental health interventions globally.</p>
+                </div>
+            </div>
+            
+            <div class="team-note">
+                <h3>Growing Team</h3>
+                <p>LATERAL's team includes 10+ dedicated professionals across the United States and Philippines, including lay therapists, program coordinators, researchers, and operations staff. Together, we're building a platform that can serve communities worldwide.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Join Us Section -->
+    <section class="content-section">
+        <div class="container">
+            <div class="content-wrapper text-center">
+                <h2 class="section-title">Join Our Team</h2>
+                <p>We're always looking for passionate individuals who want to make a difference in global mental health. Whether you're a researcher, clinician, technologist, or community organizer, there may be a place for you on our team.</p>
+                <div class="mt-3">
+                    <a href="get-involved.html#team" class="btn btn-primary">Explore Opportunities</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>LATERAL</h4>
+                    <p>Lay Therapy Research Lab</p>
+                    <p>Scaling mental health solutions through community-led innovation</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="model.html">Our Model</a></li>
+                        <li><a href="research.html">Research</a></li>
+                        <li><a href="team.html">Team</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Get Involved</h4>
+                    <ul class="footer-links">
+                        <li><a href="get-involved.html#researchers">For Researchers</a></li>
+                        <li><a href="get-involved.html#funders">For Funders</a></li>
+                        <li><a href="get-involved.html#communities">For Communities</a></li>
+                        <li><a href="get-involved.html#contact">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 LATERAL. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
