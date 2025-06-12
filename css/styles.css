@@ -602,6 +602,19 @@ p {
     z-index: 1;
 }
 
+.blue-accent {
+    background: var(--primary-dark-blue);
+    color: var(--light-blue);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 20px;
+    display: inline-block;
+    font-weight: 600;
+    margin: var(--spacing-xs) 0;
+    border: 1px solid var(--border-blue);
+    position: relative;
+    z-index: 1;
+}
+
 /* Utility Classes */
 .text-center { text-align: center; }
 .mt-1 { margin-top: var(--spacing-xs); }

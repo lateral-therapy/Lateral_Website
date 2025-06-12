@@ -10,53 +10,20 @@
     <style>
         .involvement-section {
             padding: var(--spacing-lg) 0;
-            border-bottom: 1px solid var(--border-gray);
+            border-bottom: 1px solid var(--border-blue);
         }
         .involvement-section:last-of-type {
             border-bottom: none;
         }
-        .contact-form {
-            max-width: 600px;
-            margin: 0 auto;
-        }
-        .form-group {
-            margin-bottom: var(--spacing-md);
-        }
-        .form-label {
-            display: block;
-            font-weight: 600;
-            margin-bottom: var(--spacing-xs);
-            color: var(--dark-text);
-        }
-        .form-input,
-        .form-textarea,
-        .form-select {
-            width: 100%;
-            padding: 0.75rem;
-            border: 1px solid var(--border-gray);
-            border-radius: 6px;
-            font-family: var(--font-primary);
-            font-size: 1rem;
-            transition: border-color 0.3s ease;
-        }
-        .form-input:focus,
-        .form-textarea:focus,
-        .form-select:focus {
-            outline: none;
-            border-color: var(--primary-blue);
-        }
-        .form-textarea {
-            min-height: 120px;
-            resize: vertical;
-        }
         .opportunity-card {
-            background: var(--secondary-blue);
+            background: linear-gradient(135deg, var(--card-bg) 0%, var(--primary-dark-blue) 100%);
             padding: var(--spacing-md);
             border-radius: 8px;
             margin-bottom: var(--spacing-md);
+            border: 1px solid var(--border-blue);
         }
         .opportunity-card h3 {
-            color: var(--primary-blue);
+            color: var(--accent-blue);
             margin-bottom: var(--spacing-sm);
         }
     </style>
@@ -187,52 +154,13 @@
         </div>
     </section>
 
-    <!-- Contact Form Section -->
+    <!-- Contact Information Section -->
     <section class="content-section" id="contact">
         <div class="container">
-            <div class="content-wrapper">
-                <h2 class="section-title text-center">Contact Us</h2>
-                <p class="text-center mb-4">Ready to get involved? We'd love to hear from you.</p>
-                
-                <form class="contact-form" id="contactForm">
-                    <div class="form-group">
-                        <label for="name" class="form-label">Name *</label>
-                        <input type="text" id="name" name="name" class="form-input" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="email" class="form-label">Email *</label>
-                        <input type="email" id="email" name="email" class="form-input" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="organization" class="form-label">Organization</label>
-                        <input type="text" id="organization" name="organization" class="form-input">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="interest" class="form-label">I am interested in... *</label>
-                        <select id="interest" name="interest" class="form-select" required>
-                            <option value="">Please select</option>
-                            <option value="research">Research Collaboration</option>
-                            <option value="funding">Funding Opportunities</option>
-                            <option value="joining">Joining the Team</option>
-                            <option value="community">Community Partnership</option>
-                            <option value="other">Other</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="message" class="form-label">Message *</label>
-                        <textarea id="message" name="message" class="form-textarea" required placeholder="Tell us more about your interest in LATERAL..."></textarea>
-                    </div>
-                    
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-primary">Send Message</button>
-                    </div>
-                </form>
-                
-                <div id="formMessage" style="display: none; margin-top: 20px; padding: 15px; border-radius: 6px; text-align: center;"></div>
+            <div class="content-wrapper text-center">
+                <h2 class="section-title">Connect With Us</h2>
+                <p>Ready to get involved? We'd love to hear from you and explore how we can work together to advance global mental health.</p>
+                <p>Please reach out to us through your preferred professional channels or connect with our team members directly.</p>
             </div>
         </div>
     </section>
@@ -244,7 +172,7 @@
                 <div class="footer-section">
                     <h4>LATERAL</h4>
                     <p>Lay Therapy Research Lab</p>
-                    <p class="yellow-accent">Non-profit organization incorporated in Hawaii, USA</p>
+                    <p class="blue-accent">Non-profit organization incorporated in Hawaii, USA</p>
                     <p>Scaling mental health solutions through community-led innovation</p>
                 </div>
                 <div class="footer-section">
@@ -262,7 +190,7 @@
                         <li><a href="get-involved.html#researchers">For Researchers</a></li>
                         <li><a href="get-involved.html#funders">For Funders</a></li>
                         <li><a href="get-involved.html#communities">For Communities</a></li>
-                        <li><a href="get-involved.html#contact">Contact Us</a></li>
+                        <li><a href="get-involved.html#contact">Connect With Us</a></li>
                     </ul>
                 </div>
             </div>
@@ -273,28 +201,5 @@
     </footer>
 
     <script src="js/main.js"></script>
-    <script>
-        // Basic form handling
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            
-            const formMessage = document.getElementById('formMessage');
-            formMessage.style.display = 'block';
-            formMessage.style.backgroundColor = '#e6f9f1';
-            formMessage.style.color = '#00a86b';
-            formMessage.innerHTML = 'Thank you for your interest! We will get back to you soon.';
-            
-            // Reset form
-            this.reset();
-            
-            // Scroll to message
-            formMessage.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            
-            // Hide message after 5 seconds
-            setTimeout(() => {
-                formMessage.style.display = 'none';
-            }, 5000);
-        });
-    </script>
 </body>
 </html>
