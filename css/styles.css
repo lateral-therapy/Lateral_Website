@@ -615,6 +615,28 @@ p {
     z-index: 1;
 }
 
+/* Contact Email Styling */
+.contact-email {
+    font-size: 1.25rem;
+    margin: var(--spacing-md) 0;
+}
+
+.email-link {
+    color: var(--primary-yellow);
+    text-decoration: none;
+    font-weight: 600;
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    display: inline-block;
+}
+
+.email-link:hover {
+    background: rgba(255, 215, 0, 0.15);
+    transform: translateY(-1px);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
 /* Utility Classes */
 .text-center { text-align: center; }
 .mt-1 { margin-top: var(--spacing-xs); }
