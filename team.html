@@ -54,6 +54,17 @@
             position: relative;
             z-index: 1;
             box-shadow: 0 4px 15px rgba(255, 215, 0, 0.4);
+            overflow: hidden;
+        }
+        .member-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .member-avatar.has-image {
+            background: none;
+            padding: 0;
         }
         .member-name {
             font-size: 1.4rem;
@@ -149,8 +160,8 @@
             
             <div class="team-grid">
                 <div class="team-member">
-                    <div class="member-avatar">
-                        <img src="images/JeffreyKursonis.jpg" alt="Jeffrey Kursonis" style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;">
+                    <div class="member-avatar has-image">
+                        <img src="images/JeffreyKursonis.jpg" alt="Jeffrey Kursonis">
                     </div>
                     <h3 class="member-name">Jeffrey Kursonis</h3>
                     <p class="member-role">Founder & CEO</p>
